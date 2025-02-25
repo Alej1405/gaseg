@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { Helmet } from "react-helmet-async"
 
 
 export default function ContactosPage() {
@@ -8,6 +9,35 @@ export default function ContactosPage() {
 
     return (
         <div className="bg-red-50 pb-10">
+            <Helmet>
+                {/* Título de la página */}
+                <title>Gaseg Fire | Contactos </title>
+
+                {/* Meta etiquetas generales */}
+                <meta name="description" content="Estmos cerca de ti, siempre es un placer poder atenderte. Somos tua aliados en seguridad industrial y proteccion contra incendios." />
+                <meta name="keywords" content="seguridad industrial, extintores, recarga de extintores, control de incendios, sistemas de proteccion, salud ocupacional" />
+                <meta name="author" content="MashaCorp" />
+
+                {/* Meta etiqueta robots */}
+                <meta name="robots" content="index, follow" />
+                
+                {/* Meta etiquetas Open Graph para Facebook */}
+                <meta property="og:title" content="Gaseg Fire | Contactos" />
+                <meta property="og:description" content="Estmos cerca de ti, siempre es un placer poder atenderte. Somos tua aliados en seguridad industrial y proteccion contra incendios." />
+                <meta property="og:image" content="https://ejemplo.com/imagen.jpg" />
+                <meta property="og:url" content="https://gaseg.mashacorp.com/logo.svg" />
+                <meta property="og:type" content="https://gaseg.mashacorp.com/" />
+
+                {/* Meta etiquetas Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Gaseg Fire | Contactos" />
+                <meta name="twitter:description" content="Estmos cerca de ti, siempre es un placer poder atenderte. Somos tua aliados en seguridad industrial y proteccion contra incendios." />
+                <meta name="twitter:image" content="https://gaseg.mashacorp.com/logo.svg" />
+                <meta name="twitter:site" content="@gaseg" />
+
+                {/* Canonical Link */}
+                <link rel="canonical" href="https://gaseg-ec.com/index" />
+            </Helmet>
             <h1 className="text-center uppercase text-md md:text-1xl font-bold pt-12">
             contactos
             </h1>

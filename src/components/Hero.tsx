@@ -2,9 +2,27 @@ import React, { useEffect, useState } from 'react';
 import BtnCompra from './BtnCompra';
 
 const carouselItems = [
-    { image: 'img1.svg', text: 'Venta de Extindores', contenido:'Una amplia gama de extintores necesarios para proteger, tecnologia de punta.' },
-    { image: 'img2.svg', text: 'Recarga y control ', contenido:'Creamos la ficha necesaria para que tus extintores esten siempre listos para el uso. Llevamos el control permanente tanto en la recarga como en el caducidad.' },
-    { image: 'img3.svg', text: 'Seguriad Industrial', contenido:'Creamos toda una porpuesta integral de seguridad, planes de riesgo, buenas practis y planos de permitan tener un contingente' },
+    {
+        image: 'img1.svg',
+        text: 'Venta de Extindores',
+        contenido:'Extintores de todos los tipos, accesorios y repuestos originales.' 
+    },
+    { 
+        image: 'img2.svg',
+        text: 'Mantenimiento prventivo y correcctivo', 
+        contenido:'Inspecciones periódicas, recargas, reparaciones y pruebas hidrostáticas.' 
+    },
+    { 
+        image: 'img3.svg', 
+        text: 'capacitación', 
+        contenido:'Cursos de manejo de extintores y formacion en seguridad contra incendios para su personal.' 
+    },
+    {
+        image: 'img4.jpg',
+        text: 'instalacion',
+        contenido: 'Diseño e instalación de sistemas de protección contra incendios adaptados a cada empresa.'
+    },
+
 ];
 
 const Carousel: React.FC = () => {
@@ -30,7 +48,7 @@ const Carousel: React.FC = () => {
                     style={{ backgroundImage: `url(${item.image})`}}
                 >
                     <div className="absolute inset-0 flex justify-center bg-black bg-opacity-70">
-                        <h1 className="uppercase font-black tracking-wider text-white md:text-6xl text-4xl my-12">
+                        <h1 className="uppercase font-black text-center tracking-wider text-white md:text-6xl text-4xl my-12 mb-6">
                             {item.text}
                         </h1>
                     </div>

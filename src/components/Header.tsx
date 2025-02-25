@@ -17,11 +17,16 @@ export default function Header() {
                         <div>
                             <NavLink
                                 to="/"
-                                className="text-lg font-bold flex flex-row items-center gap-3">
+                                className="text-lg font-bold flex flex-row items-center gap-2">
                                     <img src="logo.svg" alt="Logo GASEG" className="md:w-24 w-10"/>
-                                    <h2 className="uppercase font-black tracking-widest text-4xl">
-                                        gaseg
-                                    </h2>
+                                    <div className="uppercase font-black tracking-widest text-4xl margin-y-1">
+                                        <h2>
+                                            gaseg
+                                        </h2>
+                                        <small className="text-xs font-normal normal-case">
+                                            Seguridad y salud ocupacional
+                                        </small>
+                                    </div>
                             </NavLink>
 
                         </div>
