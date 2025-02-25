@@ -23,7 +23,7 @@ export default function Header() {
                                         <h2>
                                             gaseg
                                         </h2>
-                                        <small className="text-xs font-normal normal-case">
+                                        <small className="text-xs font-normal block normal-case">
                                             Seguridad y salud ocupacional
                                         </small>
                                     </div>

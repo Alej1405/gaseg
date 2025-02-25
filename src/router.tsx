@@ -12,7 +12,7 @@ import ServicioPage from "./pages/ServicioPage";
 import GeneralLayout from "./layout/GeneralLayout";
 
 
-export default function AppRouer() {
+export default function AppRouter() {
     return (
         <BrowserRouter>
             <Routes>
